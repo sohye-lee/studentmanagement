@@ -82,3 +82,6 @@
 /Users/sohye/Projects/Test_Inflearn/Test/obj/Debug/net5.0/Test.genruntimeconfig.cache
 /Users/sohye/Projects/Test_Inflearn/Test/obj/Debug/net5.0/Test.csproj.CopyComplete
 /Users/sohye/Projects/Test_Inflearn/Test/obj/Debug/net5.0/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/sohye/Projects/Test_Inflearn/Test/obj/Debug/net5.0/Razor/Views/Home/Index.cshtml.g.cs
+/Users/sohye/Projects/Test_Inflearn/Test/obj/Debug/net5.0/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/sohye/Projects/Test_Inflearn/Test/obj/Debug/net5.0/Razor/Views/Home/_TeacherTable.cshtml.g.cs

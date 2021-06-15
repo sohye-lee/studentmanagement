@@ -1,7 +1,8 @@
-﻿@using Test.ViewModels
-@model StudentTeacherViewModel
+﻿@model StudentTeacherViewModel
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+@{
+    ViewBag.Title = "Student";
+}
 
 <section>
     <div class="container">
@@ -38,24 +39,7 @@
             </div>
             <div class="mx-auto col-9">
                 <hr />
-                <h3>Our Teachers</h3>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Class</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach(var teacher in Model.Teachers)
-                        {
-                        <tr>
-                            <td>@teacher.Name</td>
-                            <td>@teacher.Class</td>
-                        </tr>
-                        }
-                    </tbody>
-                </table>
+                @await Html.PartialAsync("_TeacherTable", Model);
             </div>
         </div>
     </div>

@@ -13,6 +13,23 @@ namespace Test.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult Index()
+        {
+            List<Teacher> teachers = new List<Teacher>()
+            {
+                new Teacher() { Name = "Sean", Class = "English" },
+                new Teacher() { Name = "Daniel", Class = "Math" },
+                new Teacher() { Name = "Noah", Class = "Art" },
+                new Teacher() { Name = "Chloe", Class = "Music" }
+            };
+
+            var viewModel = new StudentTeacherViewModel()
+            {
+                Student = new Student(),
+                Teachers = teachers
+            };
+            return View(viewModel);
+        }
         // GET: /<controller>/
         public IActionResult Student()
         {
